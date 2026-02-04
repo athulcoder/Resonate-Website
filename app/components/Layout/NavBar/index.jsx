@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import Logo from "@/assets/resonate_logo_white.svg";
-
+import { RxHamburgerMenu } from "react-icons/rx";
+import { IoCloseOutline } from "react-icons/io5";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
@@ -36,7 +37,8 @@ const Navbar = () => {
           aria-label="Toggle navigation"
           aria-expanded={open}
         >
-          ☰
+        {open?<IoCloseOutline/>:<RxHamburgerMenu/>}
+
         </button>
 
         {/* Navigation links */}
