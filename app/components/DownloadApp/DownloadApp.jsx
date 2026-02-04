@@ -1,4 +1,3 @@
-import React from 'react';
 import './DownloadApp.css';
 import StoreButton from './StoreButton';
 
